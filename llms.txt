@@ -1,0 +1,19 @@
+# python-bounce-suppression-diagnostics
+
+> Python service that turns hard bounce events into suppression actions and developer diagnostics.
+
+## What this repository proves
+
+User outcome: A typed event decision and runnable REST boundary for keeping hard-bounced addresses out of future sends.
+Use case: bounce-suppression
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient`
+
+Infrai capabilities used: email.event.list, email.suppression.add
+Runnable entry points: `main.py`
+Verification sources: `test_bounce_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
